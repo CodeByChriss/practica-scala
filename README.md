@@ -11,7 +11,7 @@ Nombre y apellidos: Christian Salguero Varas
 -Java: JDK 17
 
 ## Parte 1 — Entornos de trabajo
-[Ver documentación](parte/README.md)
+[Ver documentación](parte1/README.md)
 
 ### Entorno 1
 JupyterLab + Almond Kernel
