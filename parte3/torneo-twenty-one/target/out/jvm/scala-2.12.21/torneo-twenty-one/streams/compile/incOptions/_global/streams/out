@@ -1,0 +1,17 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\target\out\jvm\scala-2.12.21\torneo-twenty-one\classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	MainV2$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\target\out\jvm\scala-2.12.21\torneo-twenty-one\classes.bak[0m
