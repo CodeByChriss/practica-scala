@@ -6718,3 +6718,121 @@ WARNING: Unmatched cancel notification for request id 8312
 2026.09.16 17:19:03 INFO  Memory monitor stopped
 2026.09.16 17:19:03 INFO  shutting down Metals
 2026.09.16 17:19:03 INFO  Exiting server
+2026.09.16 17:19:16 INFO  Started: Metals version 1.6.9 in folders 'C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one' for client Visual Studio Code 1.138.0.
+2026.09.16 17:19:16 INFO  Memory monitor started
+2026.09.16 17:19:18 WARN  Using H2 2.5.250 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.09.16 17:19:18 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+Sep 16, 2026 5:19:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 16, 2026 5:19:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2026.09.16 17:19:19 INFO  skipping build import with status 'Dismissed'
+2026.09.16 17:19:19 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:19 WARN  no build target for: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt
+Sep 16, 2026 5:19:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 16, 2026 5:19:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.09.16 17:19:20 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:20 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+Sep 16, 2026 5:19:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 9
+Sep 16, 2026 5:19:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2
+2026.09.16 17:19:20 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+Sep 16, 2026 5:19:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Sep 16, 2026 5:19:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 11
+2026.09.16 17:19:20 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+Sep 16, 2026 5:19:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 17
+2026.09.16 17:19:20 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:22 WARN  Could not find semantic tokens for: file:///C:/Users/jacds/Downloads/practica-scala/parte3/torneo-twenty-one/build.sbt
+2026.09.16 17:19:22 INFO  time: code lens generation in 1.38s
+2026.09.16 17:19:22 INFO  time: code lens generation in 1.39s
+2026.09.16 17:19:22 INFO  time: code lens generation in 1.55s
+2026.09.16 17:19:22 WARN  no build target for: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala
+2026.09.16 17:19:22 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:22 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:22 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:24 INFO  time: code lens generation in 1.54s
+2026.09.16 17:19:26 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:41 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:19:41 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:20:09 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:20:09 WARN  no build target for: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt
+2026.09.16 17:20:09 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:20:09 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:20:09 WARN  Could not find semantic tokens for: file:///C:/Users/jacds/Downloads/practica-scala/parte3/torneo-twenty-one/build.sbt
+2026.09.16 17:20:09 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:20:45 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\build.sbt. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 WARN  no build target for: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+Sep 16, 2026 5:26:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 45
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:29 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:30 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:35 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:26:38 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\MainV2.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:35:00 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:35:00 WARN  no build target for: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala
+2026.09.16 17:35:00 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:35:00 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:35:00 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:35:00 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:22 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:34 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:34 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:36 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:36 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:37 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:37 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:38:37 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:51 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:51 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:54 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:54 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:54 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:54 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:40:54 INFO  empty definition using pc, found symbol in pc: scala/Array#length(). (full report at: "C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\.metals\.reports\metals-full\2026-09-16\r_empty-definition_16-51-06-481.md")
+2026.09.16 17:46:50 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:51 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:51 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:51 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:52 INFO  Created report: Optional[file:///C:/Users/jacds/Downloads/practica-scala/parte3/torneo-twenty-one/src/main/scala/Main.scala]
+2026.09.16 17:46:52 INFO  empty definition using pc, found symbol in pc:  (full report at: "C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\.metals\.reports\metals-full\2026-09-16\r_empty-definition_17-46-52-086.md")
+2026.09.16 17:46:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:51 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:46:52 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:52:40 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:52:40 WARN  no build target for: C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala
+2026.09.16 17:52:40 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:52:40 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:52:55 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:52:55 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8
+2026.09.16 17:53:40 INFO  no build target found for C:\Users\jacds\Downloads\practica-scala\parte3\torneo-twenty-one\src\main\scala\Main.scala. Using presentation compiler with project's scala-library version: 3.3.8

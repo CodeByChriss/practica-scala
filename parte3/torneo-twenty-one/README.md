@@ -50,7 +50,7 @@ torneo-twenty-one/
 ```
 
 - **`build.sbt`**: Archivo de configuración donde se especifican el nombre del proyecto (`torneo-twenty-one`) y la versión de Scala (`2.12.21`).
-- **`src/main/scala/Main.scala`**: Código fuente principal que contiene la lógica del juego, las funciones auxiliares y el flujo de ejecución.
+- **`src/main/scala/Main.scala`**: Código fuente principal que contiene la lógica del juego y las funciones auxiliares.
 - **`src/main/scala/MainV2.scala`**: Exactamente igual que Main.scala solo que cambia el while de la función contarManos() por un foreach.
 
 ---
@@ -60,23 +60,20 @@ torneo-twenty-one/
 - **`bust(puntuacion: Int): Boolean`**: Evalúa si una puntuación supera el límite de 21. Devuelve `true` si la mano está fuera de juego y `false` en caso contrario.
 - **`estadoMano(puntuacion: Int): String`**: Utiliza `bust` para clasificar la mano devolviendo `"VALIDA"` o `"BUST"`.
 - **`mejorMano(handA: Int, handB: Int): Int`**: Compara dos puntuaciones aplicando las reglas de Twenty-One: descarta cualquier mano que supere 21 (devolviendo `0` si ambas son nulas) y retoma la mano de mayor valor entre las válidas.
-- **`contarManos(puntuaciones: Array[Int], buscar: String): Int`**: Recorre un arreglo de puntuaciones e identifica cuántas coinciden con el estado recibido (`"VALIDA"` o `"BUST"`).
-- **`mejorPuntuacion(puntuaciones: Array[Int]): Int`**: Determina la puntuación válida más alta de una ronda iterando sobre el arreglo mediante la función `mejorMano`.
+- **`contarManos(puntuaciones: Array[Int], buscar: String): Int`**: Recorre un array de puntuaciones e identifica cuántas coinciden con el estado recibido (`"VALIDA"` o `"BUST"`).
+- **`mejorPuntuacion(puntuaciones: Array[Int]): Int`**: Determina la puntuación válida más alta de una ronda iterando sobre el array mediante la función `mejorMano`.
 
 ---
 
-## Comparativa: `while` vs `foreach` (Sección 3.1.14)
+## Colecciones utilizadas
 
-En el desarrollo del proyecto se implementaron e investigaron dos enfoques para el recorrido e inspección de las colecciones:
+Para el almacenamiento y la gestión de datos dentro del programa se han empleado las siguientes estructuras de colecciones:
 
-| Criterio | Bucle `while` | Método `foreach` |
-| :--- | :--- | :--- |
-| **Control de índice** | Requiere un contador manual (`var i = 0`). | No requiere contador; abstrae el acceso a índices. |
-| **Mutabilidad** | Requiere una variable mutable (`var`) para la condición de parada. | No requiere variables mutables externas. |
-| **Estilo de programación** | Imperativo (indica *cómo* iterar paso a paso). | Funcional (indica *qué hacer* con cada elemento). |
-| **Riesgo de errores** | Propenso a errores como `IndexOutOfBoundsException`. | Seguro contra errores de desbordamiento de límites. |
+- **`List[String]` (`jugadores`)**: 
+  - **Uso:** Almacena los nombres de los participantes del torneo (`"Alex"`, `"Chen"`, `"Marta"`, `"Sindhu"`, `"Luis"`).
 
-**Conclusión:** El uso de `foreach` se aproxima mucho más al paradigma **funcional** promovido en Scala, ya que trata las colecciones como estructuras declarativas y evita la manipulación directa de variables mutables de control.
+- **`Array[Int]` (`puntuaciones` y `puntuacionesRonda2`)**:
+  - **Uso:** Guarda las puntuaciones numéricas obtenidas por los jugadores en cada ronda individual.
 
 ---
 
@@ -108,7 +105,7 @@ sbt run
 
 ### Resultados obtenidos
 
-Al ejecutar la aplicación con los datos proporcionados, se obtienen los siguientes resultados consolidados:
+Al ejecutar la aplicación con los datos proporcionados, se obtienen los siguientes resultados:
 
 * **Primera ronda:**
   * **Jugadores:** 5
