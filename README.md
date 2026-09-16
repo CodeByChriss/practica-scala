@@ -23,5 +23,9 @@ Visual Studio Code + Metals + sbt
 IntelliJ IDEA Community + sbt
 
 ## Parte 2 — Programación con Scala en JupyterLab
-[Ver documentación](parte2/README.md)
+[Ver documentación](parte2/README.md) <br>
 [Ver Notebook.ipynb](parte2/Notebook.ipynb)
+
+## Parte 3 — Mini proyectos en entornos de desarrollo
+[Ver documentación torneo-twenty-one](parte3/torneo-twenty-one/README.md) <br>
+[Ver documentación analizador-notas](parte3/analizador-notas/README.md)
