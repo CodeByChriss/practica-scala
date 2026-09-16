@@ -1,0 +1,109 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtMapExec da43387d-ed72-4d56-8e1a-d083a06ca702 __ba32a21c-7205-49e0-be74-964269b3b1df, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(__ba32a21c-7205-49e0-be74-964269b3b1df), Some(CommandSource(network-3)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing sbt/exec"})[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(loadp, Some(__ba32a21c-7205-49e0-be74-964269b3b1df), Some(CommandSource(network-3)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing sbt/exec"})[0m
+[0m[[0m[0minfo[0m] [0m[0mwelcome to sbt 2.0.9 (Oracle Corporation Java 17.0.12)[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.defaultLoad until apply took 38.6533ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: plugins took 28.7264ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: defsScala took 0.0022ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory C:\Users\jacds\Downloads\practica-scala\parte1\vscode\project[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Users\jacds\Downloads\practica-scala\parte1\vscode\project, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.DependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.DependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.DependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.9193 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m              Load.resolveProjectSettings(vscode-build) took 2.0813ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m            Load.loadTransitive: processProject(Project(id vscode-build, base: C:\Users\jacds\Downloads\practica-scala\parte1\vscode\project, plugins: List(<none>))) took 5.6782ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Users\jacds\Downloads\practica-scala\parte1\vscode\project, returning: (vscode-build)[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: loadedProjectsRaw took 9.2441ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m          Load.loadUnit: cleanEvalClasses took 0.0315ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.loadUnit(file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/project/, ...) took 39.2498ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: load took 43.2765ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: resolveProjects took 0.2625ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: buildConfigurations took 15.7719ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: finalTransforms took 6.5944ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: config.delegates took 0.3563ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: Def.make(settings)... took 104.7945ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: structureIndex took 50.047ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.apply: mkStreams took 0.0246ms[0m
+[0m[[0m[0minfo[0m] [0m[0mloading project definition from C:\Users\jacds\Downloads\practica-scala\parte1\vscode\project[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [91,105,110,102,111,93,32,102,97,105,108,101,100,32,116,111,32,97,32,99,114,101,97,116,101,32,115,121,109,98,111,108,105,99,32,108,105,110,107,46,32,99,111,110,115,105,100,101,114,32,101,110,97,98,108,105,110,103,32,68,101,118,101,108,111,112,101,114,32,77,111,100,101])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [13,10])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [91,105,110,102,111,93,32,102,97,105,108,101,100,32,116,111,32,97,32,99,114,101,97,116,101,32,115,121,109,98,111,108,105,99,32,108,105,110,107,46,32,99,111,110,115,105,100,101,114,32,101,110,97,98,108,105,110,103,32,68,101,118,101,108,111,112,101,114,32,77,111,100,101])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [13,10])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [91,105,110,102,111,93,32,102,97,105,108,101,100,32,116,111,32,97,32,99,114,101,97,116,101,32,115,121,109,98,111,108,105,99,32,108,105,110,107,46,32,99,111,110,115,105,100,101,114,32,101,110,97,98,108,105,110,103,32,68,101,118,101,108,111,112,101,114,32,77,111,100,101])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [13,10])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcRequest: JsonRpcRequestMessage(2.0, af7a67a2-ecc8-4cc2-82e8-211cb2b8ca6a, sbt/terminalPropertiesQuery, ""})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"3","parents":[]},"eventTime":1789568648079,"message":"Compiling vscode-build","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/project/#vscode-build/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"3","parents":[]},"eventTime":1789568648121,"message":"Compiled vscode-build","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/project/#vscode-build/Compile"},"errors":0,"warnings":0,"time":42}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: plugins took 1628.9781ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: defsScala took 0.0012ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Scanning directory C:\Users\jacds\Downloads\practica-scala\parte1\vscode[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadUnit: mkEval took 1.6252ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/jacds/Downloads/practica-scala/parte1/vscode/build.sbt"},"buildTarget":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/project/#vscode-build/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/jacds/Downloads/practica-scala/parte1/vscode/build.sbt"},"buildTarget":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/project/#vscode-build/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/jacds/Downloads/practica-scala/parte1/vscode/build.sbt"},"buildTarget":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/project/#vscode-build/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Found non-root projects [0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Users\jacds\Downloads\practica-scala\parte1\vscode, returning: ()[0m
+[0m[[0m[0mdebug[0m] [0m[0mdeducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.DependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mClause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.DependencyTreePlugin))))[0m
+[0m[[0m[0mdebug[0m] [0m[0m  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.DependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)[0m
+[0m[[0m[0mdebug[0m] [0m[0mPlugins.deducer#function took 1.1419 ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m        Load.resolveProjectSettings(vscode) took 0.7434ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m      Load.loadTransitive: processProject(Project(id vscode, base: C:\Users\jacds\Downloads\practica-scala\parte1\vscode, plugins: List(<none>))) took 3.0465ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m[Loading] Done in C:\Users\jacds\Downloads\practica-scala\parte1\vscode, returning: (vscode)[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: loadedProjectsRaw took 28.5431ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Load.loadUnit: cleanEvalClasses took 0.6428ms[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Load.loadUnit(file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/, ...) took 1659.0959ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: load took 1665.1007ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: resolveProjects took 0.177ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: buildConfigurations took 9.665ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: finalTransforms took 5.2556ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: config.delegates took 0.2007ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: Def.make(settings)... took 62.1185ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: structureIndex took 27.8122ms[0m
+[0m[[0m[0mdebug[0m] [0m[0mLoad.apply: mkStreams took 0.0023ms[0m
+[0m[[0m[0minfo[0m] [0m[0mset current project to vscode (in build file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/)[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(__ba32a21c-7205-49e0-be74-964269b3b1df), Some(CommandSource(network-3)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing sbt/exec"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [91,105,110,102,111,93,32,102,97,105,108,101,100,32,116,111,32,97,32,99,114,101,97,116,101,32,115,121,109,98,111,108,105,99,32,108,105,110,107,46,32,99,111,110,115,105,100,101,114,32,101,110,97,98,108,105,110,103,32,68,101,118,101,108,111,112,101,114,32,77,111,100,101])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/systemErr, [13,10])[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskStart, {"taskId":{"id":"4","parents":[]},"eventTime":1789568648672,"message":"Compiling vscode","dataKind":"compile-task","data":{"target":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/#vscode/Compile"}}})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/publishDiagnostics, {"textDocument":{"uri":"file:///C:/Users/jacds/Downloads/practica-scala/parte1/vscode/src/main/scala/Main.scala"},"buildTarget":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/#vscode/Compile"},"diagnostics":[],"reset":true})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/taskFinish, {"taskId":{"id":"4","parents":[]},"eventTime":1789568648708,"message":"Compiled vscode","status":1,"dataKind":"compile-report","data":{"target":{"uri":"file:/C:/Users/jacds/Downloads/practica-scala/parte1/vscode/#vscode/Compile"},"errors":0,"warnings":0,"time":36}})[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtCompleteExec da43387d-ed72-4d56-8e1a-d083a06ca702, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtReportResult da43387d-ed72-4d56-8e1a-d083a06ca702, Some(da43387d-ed72-4d56-8e1a-d083a06ca702), Some(CommandSource(network-3)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, build/logMessage, {"type":4,"message":"Processing sbt/exec"})[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, sbt/exec, {"status":"Queued","channelName":"network-3","execId":"2a3f6b3c-fd7c-45d9-8b16-05c0bf94e12a","commandQueue":[],"message":"waiting for: shell"})[0m
+[0m[[0m[0mdebug[0m] [0m[0mjsonRpcNotify: JsonRpcNotificationMessage(2.0, shutdown, [false,null])[0m
