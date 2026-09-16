@@ -9,7 +9,7 @@
 Esta carpeta contiene la resolución de los **15 ejercicios de programación** en Scala basados en los capítulos 1, 2 y 3 del curso. Se abordan conceptos de mutabilidad, tipos de datos, colecciones (`Array`, `List`), estructuras de control y estilos imperativo y funcional.
 
 ## Notebook del Proyecto
-- [Ver Notebook Principal (notebook.ipynb)](notebook.ipynb)
+- [Ver Notebook Principal (Notebook.ipynb)](Notebook.ipynb)
 
 ---
 

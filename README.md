@@ -21,3 +21,7 @@ Visual Studio Code + Metals + sbt
 
 ### Entorno 3
 IntelliJ IDEA Community + sbt
+
+## Parte 2 — Programación con Scala en JupyterLab
+[Ver documentación](parte2/README.md)
+[Ver Notebook.ipynb](parte2/Notebook.ipynb)
