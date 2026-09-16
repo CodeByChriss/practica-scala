@@ -1,99 +1,180 @@
+
+# Scala Multi-Environment Setup Guide
+### Configuración de 3 entornos de desarrollo para Scala 2.12.21
+
+*Guía paso a paso, con capturas propias, para levantar Scala en tres flujos de trabajo distintos: notebooks interactivos (JupyterLab), edición ligera (VSCode) y un IDE completo (IntelliJ).*
+
+---
+
+## Sobre esta guía
+
+Este documento recoge la instalación y configuración **de principio a fin** de tres entornos de desarrollo para **Scala 2.12.21**, pensados para cubrir distintos casos de uso: experimentación rápida en notebooks, desarrollo ágil en editor ligero, y un IDE completo con todas las herramientas integradas.
+
+| Entorno | Herramientas principales | Ideal para |
+|---|---|---|
+| **Entorno 1** | JupyterLab + Almond Kernel | Prototipado rápido y notebooks interactivos |
+| **Entorno 2** | VS Code + Metals + sbt | Desarrollo ágil con editor ligero |
+| **Entorno 3** | IntelliJ IDEA Community + sbt | Proyectos completos con IDE integrado |
+
+**Requisitos comunes:** Windows · JDK 17 · Scala 2.12.21 · sbt
+
+*Las imágenes referenciadas se encuentran en la carpeta [`../images`](../images) del repositorio.*
+
+---
+
+## Índice
+
+- [1.1 — JupyterLab + Almond Kernel + Scala](#11-entorno-1--jupyterlab--almond-kernel--scala-21221)
+- [1.2 — Visual Studio Code + Metals + sbt](#12-entorno-2--visual-studio-code--metals--scala-21221--jdk-17--sbt)
+- [1.3 — IntelliJ IDEA Community + sbt](#13-entorno-3--intellij-idea-community--scala-21221--sbt)
+
+---
+
 ## 1.1 Entorno 1 — JupyterLab + Almond Kernel + Scala 2.12.21
 
-Ahora debemos descargar Python, para ello accedemos a esta página [python.org/downloads/release/python-3129](https://www.python.org/downloads/release/python-3129/) y nos descargamos la versión 3.12 que es la que se recomienda
+> Entorno orientado a la experimentación interactiva con notebooks, combinando Python, Java y el kernel de Scala **Almond**.
+
+### Paso 1 — Instalar Python
+
+Accedemos a la [página oficial de descargas de Python](https://www.python.org/downloads/release/python-3129/) y descargamos la **versión 3.12**, la recomendada para este entorno.
 
 ![Descargar Python](../images/01_DescargarPython.png)
 
-Una vez descargado procedemos a su instalación marcando la casilla 'ADD TO PATH'.
+Durante la instalación, marcamos la casilla **`ADD TO PATH`**.
 
-![Instalación Python](../images/02_InstalacionPython.png)
+![Instalación de Python](../images/02_InstalacionPython.png)
 
-Abrimos un cmd y ejecutamos 'python --version' para comprobar que lo tenemos instalado
+Verificamos la instalación abriendo un `cmd` y ejecutando:
 
-![Versión Python](../images/03_VersionPython.png)
+```bash
+python --version
+```
 
-Teniendo miniconda o anaconda y python instalado y funcionando pasamos a la instalación de JupyterLab.
-Abrimos un cmd y escribimos 'pip install jupyterlab'
+![Versión de Python](../images/03_VersionPython.png)
+
+### Paso 2 — Instalar JupyterLab
+
+Con Python (o Miniconda/Anaconda) ya operativo, instalamos JupyterLab:
+
+```bash
+pip install jupyterlab
+```
 
 ![Descargando JupyterLab](../images/04_DescargandoJupyterLab.png)
 
-Pasamos a descargarnos Java SDK 17, accedemos a esta página y bajamos hasta Windows [oracle.com/java/technologies/javase/jdk17-archive-downloads](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+### Paso 3 — Instalar Java SDK 17
+
+Descargamos el JDK desde la [página oficial de Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) (sección Windows).
 
 ![Descargar Java SDK 17](../images/05_DescargarJavaSDK17.png)
 
-Durante el asistente de instalación debemos marcar la casilla de ADD TO JAVA_HOME, en caso de que no salga como es mi caso, debemos abrir la aplicación 'EDITAR VARIABLES DE ENTORNO' de windows y agregar la nueva variable como se puede observar en la imagen
+Durante la instalación marcamos **`ADD TO JAVA_HOME`**. Si esa opción no aparece, añadimos la variable manualmente desde **Editar variables de entorno** en Windows:
 
 ![Java SDK en JAVA_HOME](../images/06_JavaSDKEnJAVA_HOME.png)
 
-Ahora en un nuevo cmd comprobamos la versión
+Comprobamos la instalación:
 
-![Versión Java SDK](../images/07_VersionJavaSDK.png)
+```bash
+java -version
+```
 
-Ahora instalaremos el kernel de Almond y Scala 2.12.21. Para ello debemos descargarnos coursier y coursier.bat desde este enlace [github.com/coursier/launchers](https://github.com/coursier/launchers) que nos permitirá instalar tanto el kernel como scala de la forma más sencilla
+![Versión de Java SDK](../images/07_VersionJavaSDK.png)
+
+### Paso 4 — Instalar el kernel Almond + Scala
+
+Descargamos `coursier` y `coursier.bat` desde [github.com/coursier/launchers](https://github.com/coursier/launchers), que simplifica la instalación tanto del kernel como de Scala.
 
 ![Descargar Coursier](../images/08_DescargarCoursier.png)
 
-Debemos dirigirnos a la carpeta en la que lo hayamos descargado y ejecutar el comando `coursier.bat launch almond:0.14.5 --scala 2.12.21 -- --install`
+Desde la carpeta de descarga, ejecutamos:
 
-![Instalar kernel Scala](../images/09_InstalarKernelScala.png)
+```bash
+coursier.bat launch almond:0.14.5 --scala 2.12.21 -- --install
+```
 
-Nos dirigimos a la carpeta en la que queremos tener nuestro workspace y ejecutamos el comando 'jupyter lab'
+![Instalar kernel de Scala](../images/09_InstalarKernelScala.png)
+
+### Paso 5 — Ejecutar JupyterLab
+
+Desde la carpeta de nuestro workspace:
+
+```bash
+jupyter lab
+```
 
 ![Ejecutar JupyterLab](../images/10_EjecutarJupyterLab.png)
 
-Abrimos jupyterlab en el navegador usando la URL proporcionada por el propio comando y debemos ver la opción de Scala
+Abrimos la URL proporcionada en el navegador y confirmamos que aparece la opción de **Scala**:
 
-![Notebook Scala](../images/11_NotebookScala.png)
+![Notebook de Scala disponible](../images/11_NotebookScala.png)
 
-Para comprobar que funciona vamos a pulsar sobre el icono de Scala (dentro del apartado de notebook) y guardaremos el notebook de Scala en nuestro workspace
+Creamos un notebook de Scala y lo guardamos en nuestro workspace:
 
-![Guardar notebook Scala](../images/12_GuardarNotebookScala.png)
+![Guardar notebook de Scala](../images/12_GuardarNotebookScala.png)
 
-**Prueba 01:** Verificar versión exacta de Scala
+### Verificación
 
-![Prueba 01 Scala](../images/13_Prueba01Scala.png)
+| Prueba | Descripción | Resultado |
+|---|---|---|
+| **Prueba 01** | Verificar la versión exacta de Scala | ![Prueba 01](../images/13_Prueba01Scala.png) |
+| **Prueba 02** | Ejecutar código de prueba en el notebook | ![Prueba 02](../images/14_Prueba02Scala.png) |
 
-**Prueba 02:** Ejecutar el código de prueba
-
-![Prueba 02 Scala](../images/14_Prueba02Scala.png)
+---
 
 ## 1.2 Entorno 2 — Visual Studio Code + Metals + Scala 2.12.21 + JDK 17 + sbt
 
-Instalamos Java SDK 17 (este paso es el mismo que los anteriores).
-Pasamos a descargarnos Java SDK 17, accedemos a esta página y bajamos hasta Windows [oracle.com/java/technologies/javase/jdk17-archive-downloads](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+> Entorno ligero y ágil, ideal para trabajar con proyectos sbt directamente desde un editor de código.
+
+### Paso 1 — Java SDK 17
+
+*(Mismo procedimiento que en el Entorno 1)*
+
+Descargamos el JDK desde la [página oficial de Oracle](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html):
 
 ![Descargar Java SDK 17](../images/05_DescargarJavaSDK17.png)
 
-Durante el asistente de instalación debemos marcar la casilla de ADD TO JAVA_HOME, en caso de que no salga como es mi caso, debemos abrir la aplicación 'EDITAR VARIABLES DE ENTORNO' de windows y agregar la nueva variable como se puede observar en la imagen
+Marcamos **`ADD TO JAVA_HOME`** durante la instalación, o lo añadimos manualmente si no aparece la opción:
 
 ![Java SDK en JAVA_HOME](../images/06_JavaSDKEnJAVA_HOME.png)
 
-Ahora en un nuevo cmd comprobamos la versión
+Comprobamos la versión instalada:
 
-![Versión Java SDK](../images/07_VersionJavaSDK.png)
+![Versión de Java SDK](../images/07_VersionJavaSDK.png)
 
-Instalamos Visual Studio Code desde [code.visualstudio.com](https://code.visualstudio.com/) y simplemente seguimos el asistente de instalación
+### Paso 2 — Instalar Visual Studio Code
 
-![Descargar VSCode](../images/15_DescargarVSCode.png)
+Descargamos e instalamos VS Code desde [code.visualstudio.com](https://code.visualstudio.com/):
 
-Una vez dentro de VSCode nos vamos a extensiones (ctrl+shift+x) y buscamos Scala (Metals)
+![Descargar VS Code](../images/15_DescargarVSCode.png)
 
-![Buscamos extensión](../images/16_BuscamosExtension.png)
-![Scala Metals instalado](../images/17_ScalaMetalsInstalado.png)
+Desde el panel de extensiones (`Ctrl+Shift+X`), buscamos e instalamos **Scala (Metals)**:
 
-Pasamos a instalar sbt, para esto nos dirigimos a su GitHub [github.com/sbt/sbt/releases](https://github.com/sbt/sbt/releases) y descargamos la última versión
+<table>
+<tr>
+<td><img src="../images/16_BuscamosExtension.png" alt="Buscar extensión Metals" width="100%"></td>
+<td><img src="../images/17_ScalaMetalsInstalado.png" alt="Metals instalado" width="100%"></td>
+</tr>
+</table>
 
-![Descargar SBT](../images/18_DescargarSBT.png)
+### Paso 3 — Instalar sbt
 
-Seguimos el asistente de instalación y en cuestión de segundos ya lo tendremos instalado
+Descargamos la última versión desde el [repositorio oficial de sbt en GitHub](https://github.com/sbt/sbt/releases):
 
-![Instalar SBT](../images/19_InstalarSBT.png)
+![Descargar sbt](../images/18_DescargarSBT.png)
 
-Para comprobar si se ha instalado correctamente, abrimos un cmd y ejecutamos `sbt --version`
+Completamos el asistente de instalación:
 
-![Versión SBT](../images/20_VersionSBT.png)
+![Instalar sbt](../images/19_InstalarSBT.png)
 
-Con todo lo necesario, abrimos la carpeta que vamos a usar como workspace con VSCode y creamos la estructura del proyecto
+Verificamos la instalación:
+
+```bash
+sbt --version
+```
+
+![Versión de sbt](../images/20_VersionSBT.png)
+
+### Paso 4 — Crear la estructura del proyecto
 
 ```
 scala-vscode/
@@ -107,60 +188,90 @@ scala-vscode/
 
 ![Estructura de carpetas](../images/21_EstructuraCarpetas.png)
 
-Dentro del fichero build.sbt debemos indicar el nombre del proyecto, la versión del proyecto y la versión de scala
+En `build.sbt` definimos el nombre del proyecto, su versión y la versión de Scala:
 
-![Contenido build.sbt](../images/22_ContenidoScalaSBT.png)
+![Contenido de build.sbt](../images/22_ContenidoScalaSBT.png)
 
-Dentro del fichero Main.scala creamos un pequeño programa
+En `Main.scala` creamos un pequeño programa de prueba:
 
-![Contenido Main.scala](../images/23_ContenidoMainScala.png)
+![Contenido de Main.scala](../images/23_ContenidoMainScala.png)
 
-Al tener la extensión de Scala (Metals) se nos crean varios directorios nuevos que permanecen ocultos por defecto
+> Al instalar la extensión de Metals, VS Code genera automáticamente varios directorios ocultos por defecto:
 
-![Nuevos directorios](../images/24_NuevosDirectorios.png)
+![Nuevos directorios generados](../images/24_NuevosDirectorios.png)
 
-Para comprobar si nuestro proyecto funciona, en VSCode abrimos una nueva terminal (ctrl+ñ) y ejecutamos `sbt compile`
+### Paso 5 — Compilar y ejecutar
 
-![Compilar Scala](../images/26_CompileScala.png)
+Desde una nueva terminal en VS Code (`Ctrl+Ñ`):
 
-Es probable que no se pueda usar `sbt compile` y te pida usar antes `sbt new` o `sbt --allow-empty`. En este caso, puedes usar `sbt --allow-empty` y luego `sbt compile` ya que usando `sbt new` te obligará a seleccionar un template para poder continuar.
+```bash
+sbt compile
+```
 
-![SBT allow empty](../images/25_SBTAllowEmpty.png)
+![Compilar proyecto Scala](../images/26_CompileScala.png)
 
-Después de compilar ejecutamos `sbt run` para lanzar el programa
+> **Nota:** si `sbt compile` solicita ejecutar antes `sbt new` o `sbt --allow-empty`, usa **`sbt --allow-empty`** — `sbt new` obliga a seleccionar una plantilla para continuar.
 
-![Scala ejecutado](../images/27_ScalaEjecutado.png)
+![sbt allow-empty](../images/25_SBTAllowEmpty.png)
+
+Una vez compilado, lanzamos el programa:
+
+```bash
+sbt run
+```
+
+![Scala ejecutado correctamente](../images/27_ScalaEjecutado.png)
+
+---
 
 ## 1.3 Entorno 3 — IntelliJ IDEA Community + Scala 2.12.21 + sbt
 
-Nos dirigimos a [jetbrains.com/es-es/idea/download](https://www.jetbrains.com/es-es/idea/download/?section=windows) y pulsamos el botón de Descargar
+> IDE completo, con gestión de proyecto, autocompletado y depuración integrados de serie.
 
-![Descargar IntelliJ](../images/28_DescargarIntelliJ.png)
+### Paso 1 — Instalar IntelliJ IDEA
 
-Seguimos el asistente de instalación. Podemos marcar el checkbox 'ADD TO PATH' si queremos poder lanzar la aplicación desde la terminal. Como no es mi caso, no la marco.
+Descargamos IntelliJ IDEA Community desde [jetbrains.com](https://www.jetbrains.com/es-es/idea/download/?section=windows):
 
-![Instalando IntelliJ](../images/29_InstalandoIntelliJ.png)
+![Descargar IntelliJ IDEA](../images/28_DescargarIntelliJ.png)
 
-Una vez instalado, lo abrimos y nos dirigimos a los plugins para instalar el plugin oficial de Scala
+Seguimos el asistente de instalación (opcionalmente marcamos **`ADD TO PATH`** para lanzarlo desde terminal):
 
-![Plugin Scala IntelliJ](../images/30_PluginScalaIntelliJ.png)
+![Instalando IntelliJ IDEA](../images/29_InstalandoIntelliJ.png)
 
-Con el plugin instalado, vamos a la pantalla principal y pulsamos en Nuevo Proyecto. Debemos seleccionar Scala en el panel de la izquierda y elegir las versiones de sbt y Scala que ya hemos instalado en los pasos anteriores (en caso de no haber hecho los pasos anteriores podemos marcar la casilla de Download para que se descarguen automáticamente)
+### Paso 2 — Instalar el plugin de Scala
 
-![Nuevo proyecto Scala IntelliJ](../images/31_NuevoProyectoScalaIntelliJ.png)
+Desde el marketplace de plugins, instalamos el plugin oficial de **Scala**:
 
-Comprobamos que la estructura de los ficheros es la correcta
+![Plugin de Scala en IntelliJ](../images/30_PluginScalaIntelliJ.png)
 
-![Ficheros Scala IntelliJ](../images/32_FicherosScalaIntelliJ.png)
+### Paso 3 — Crear el proyecto
 
-Comprobamos el contenido del fichero build.sbt y verificamos la versión de scala
+Desde la pantalla principal, **Nuevo Proyecto → Scala**, seleccionando las versiones de sbt y Scala ya instaladas (o marcando *Download* si aún no las tenemos):
 
-![Contenido build.sbt](../images/33_ContenidoBuildSBT.png)
+![Nuevo proyecto Scala en IntelliJ](../images/31_NuevoProyectoScalaIntelliJ.png)
 
-Nos dirigimos hasta la carpeta src > main > scala y hacemos click derecho y pulsamos en New > Scala Class/File, seleccionamos Object y de nombre ponemos Main.
+Verificamos que la estructura de ficheros generada es correcta:
 
-![Fichero Main IntelliJ](../images/34_FicheroMainIntelliJ.png)
+![Estructura de ficheros en IntelliJ](../images/32_FicherosScalaIntelliJ.png)
 
-Para compilar y ejecutar pulsamos el botón verde superior y se nos abrirá en la parte inferior una terminal donde podremos ver el output de la ejecución.
+Comprobamos el contenido de `build.sbt` y la versión de Scala configurada:
 
-![Ejecutando Scala IntelliJ](../images/35_EjecutandoScalaIntelliJ.png)
+![Contenido de build.sbt](../images/33_ContenidoBuildSBT.png)
+
+### Paso 4 — Crear el fichero Main
+
+En `src > main > scala`, clic derecho → **New → Scala Class/File** → seleccionamos **Object** → nombre **`Main`**:
+
+![Fichero Main.scala en IntelliJ](../images/34_FicheroMainIntelliJ.png)
+
+### Paso 5 — Compilar y ejecutar
+
+Pulsamos el botón verde de la parte superior; el output de ejecución aparece en la terminal inferior:
+
+![Ejecutando Scala en IntelliJ](../images/35_EjecutandoScalaIntelliJ.png)
+
+---
+
+### Resultado final
+
+Al completar esta guía tendrás **tres entornos de desarrollo Scala 2.12.21 completamente funcionales**, cada uno optimizado para un flujo de trabajo distinto: notebooks interactivos, edición ágil y un IDE completo.
